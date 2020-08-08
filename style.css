@@ -16,6 +16,7 @@ p {
   padding-left: 12px; 
   padding-right: 12px; 
   text-align: justify;
+  padding-bottom: 1px;
 }
 
 h1 {
@@ -88,6 +89,8 @@ figure {color: #595445;}
 
 .mesArticles{display: flex; flex-direction: row;}
 
+
+
 .date{
   width :30%;
 }
@@ -138,7 +141,7 @@ li{
 }
 li::before {content: "• "; color:  #f7c018}
 
-li2{
+p{
       padding-left: 12px
 }
 
@@ -236,21 +239,21 @@ header {
     #mesIcones span i{
       margin: auto;
       font-size: 22px;
-
+    }
 }
 
 
 @media screen and (max-width: 500px) {
 
-body{
+    body{
        width: 100%;
        flex-direction: column;
     }
-   #informations {
+    #informations {
        width: 100%;
        text-align: center;
     }
-   #bloc_page {
+    #bloc_page {
        width: 100%;
        margin-left: 0%;
     } 
@@ -282,6 +285,4 @@ body{
     #Recommandations {
         flex-direction: column;
     }
-    
 }
-
