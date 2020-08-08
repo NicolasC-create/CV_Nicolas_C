@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
          <script src="https://kit.fontawesome.com/c6c0039618.js" crossorigin="anonymous"></script>
         <title>Curiculumvitae</title>
     </head>
@@ -13,22 +14,24 @@
 	</figure>
 	<section>
 		<div>
-			<h3>Contact</h3>
+			<h3>CONTACT</h3>
 			<div>
 				<p>11 rue des Chardonnerets</p>
 				<p>85150 Landeronde   </p>
 				<p><i class="fa fa-phone" ></i> 06 81 70 18 22     </p>
 				<p><i class="fa fa-envelope-o"></i> nicolas.cardet@outlook.fr</p>
-				<p>43 ans, Marié, 2 enfants. Permis B.</p>
 			</div>
 		</div>
 	</section>
 	<section>
 		<div>
-			<h3>A propos de moi</h3>
-			<div>
+			<h3>A PROPOS DE MOI</h3>
+			<div id="about">
+				<p>43 ans</p>
+				<p>Marié, 2 enfants.</p> 
+				<p>Permis B.</p>
 				<p> 
-					Maître d'ouvrage opérations <em>immobilières</em>.<br />Spécialisé dans le <strong> montage d'opérations immobilières et foncières complexes </strong> , et la maîtrise d'ouvrage d'opérations d'aménagement urbain.
+					Spécialisé dans le montage d'opérations immobilières et foncières complexes, et la maîtrise d'ouvrage d'opérations d'aménagement urbain.
 				</p>
 			</div>
 		</div>
@@ -37,10 +40,10 @@
 		<div>
 			<h3>CENTRES D'INTERET</h3>
 		</div>
-		<figure>
-			<i class="fas fa-globe-africa"></i>
-			<i class="fas fa-dumbbell"></i>
-			<i class="fas fa-music"></i>
+		<figure id="mesIcones">
+			<span><i class="fas fa-globe-africa"></i></span>
+			<span><i class="fas fa-dumbbell"></i></span>
+			<span><i class="fas fa-music" ></i></span>
 		</figure>
 	</section>
 </aside>
@@ -48,21 +51,21 @@
  <main id="bloc_page">
 
     <header>
-    	<h1>Nicolas CARDET </h1>          
-		<p> Maître d'ouvrage opérations <em>immobilières</em>.<br />
-		Spécialisé dans le <strong> montage d'opérations immobilières et foncières complexes </strong> , et la maîtrise d'ouvrage d'opérations d'aménagement urbain.</p>
+    	<h1>Nicolas <span>CARDET</span></h1>          
+		<h4> Gérant de société - Investisseur immobilier </h4>
 	</header>
 
 		<section id="formations">
-			<h2><i class="fas fa-graduation-cap"></i>Formation</h2> 
+			<h5 class="mesTitles"><i class="fas fa-graduation-cap iconeMain"></i>FORMATION</h5> 
 
 			<article class="mesArticles">
-				<div>
+				<div class="date">
 					<ul>
-						<li>1999-2002<br/> Bordeaux</li>
+						<li>1999-2002</li>
+						<li2> Bordeaux</li2>
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2>DESS Urbanisme Opérationnel</h2>
 					<p>Mention Bien</p>
 					<p>Université Bordeaux 3 - Ecole d’architecture et de Paysage (Lauréat du concours inter universitaire d’urbanisme à Lyon)</p>
@@ -70,12 +73,13 @@
 			</article>
 
 			<article class="mesArticles">
-				<div>
+				<div class="date">
 					<ul>
-						<li>1999<br/>Nantes</li>
+						<li>1999</li>
+						<li2>Nantes</li2>
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2>Maîtrise de Sciences et Techniques en Aménagement</h2>
 					<p>Mention Bien</p>
 					<p>Université de Nantes</p>
@@ -83,12 +87,13 @@
 			</article>
 
 			<article class="mesArticles">
-				<div>
+				<div class="date">
 					<ul>
-						<li>1995<br/>Cherbourg</li>
+						<li>1995</li>
+						<li2>Cherbourg</li2>
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2>Bac Scientifique</h2>
 					<p>Mention Asser Bien</p>
 					<p>Lycée Jean-François Millet (50)</p>
@@ -97,15 +102,16 @@
 		</section>
 
 		<section id="experiences">
-			<h2><i class="fas fa-briefcase"></i>Expériences</h2> 
+			<h5 class="mesTitles"><i class="fas fa-briefcase iconeMain"></i> EXPERIENCE PROFESSIONNELLE</h5> 
 		
 			<article class="mesArticles">
-				<div>
+				<div class="date">
 					<ul>
-						<li>Depuis 2016 :<br/> Vendée (85) </li>
+						<li>Depuis 2016</li>
+						<li2>Landeronde</li2>
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2> Gérant de la SARL BELREHA </h2>
 					<p> - Acquisition, réhabilitation d'un ensemble immobilier entre 2016 et 2018, et revente de 6 appartements </p> 
 					<p> - Opération foncière de division en 2019 et 2020, avec détachement de 3 lots à bâtir.  </p>
@@ -113,12 +119,13 @@
 			</article>
 
 			<article class="mesArticles" >
-				<div>
+				<div class="date">
 					<ul>
-						<li>2013 à 2016 :<br/> Mairie de La Roche sur Yon (85) </li>
+						<li>2013 à 2016</li>
+						<li2>Roche-sur-Yon</li2>
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2> Responsable du service Aménagement (4 agents) </h2>
 					<p> - Gestion et suivi des études pré-opérationnelles d'aménagement </p>
 					<p> - Diagnostics fonciers préalables, analyse des mutations envisageables, et définition de périmètres d'intervention. </p> 
@@ -126,12 +133,13 @@
 			</article>
 
 			<article class="mesArticles" >
-				<div>
+				<div class="date">
 					<ul>
-						<li>2008 à 2013 :<br/> Mairie du Poiré-sur-Vie (85) </li>	
+						<li>2008 à 2013</li>
+						<li2>Poiré-sur-Vie</li2>	
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2>Responsable du service Urbanisme Foncier et Aménagement (2 agents) </h2>
 					<p> - Chef de projet d'une ZAC multi-sites (100 hectares) conduite en régie directe, et de trois lotissements communaux en régie.</p>
 					<p> - Acquisitions foncières (environ 3 millions d'euros de foncier acquis entre 2008 et 2013), et revente d'une soixantaine de lots aménagés et/ou viabilisés auprès de particuliers, et d'organismes. </p>
@@ -145,12 +153,13 @@
 			</article>
 
 			<article class="mesArticles" >
-				<div>
+				<div class="date">
 					<ul>
-						<li>2006 à 2008 :<br/> Mairie du Taillan-Médoc (33) </li>	
+						<li>2006 à 2008</li>
+						<li2>Taillan-Médoc</li2>	
 					</ul>
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2>Responsable du Service Urbanisme Environnement et Foncier (4 agents) </h2>
 					<p> - Acquisition du foncier pour l'aménagement d'un lotissement communal, et cession du foncier viabilisé. </p>
 					<p> - Mise en œuvre de procédures de biens vacants et sans maître dans un périmètre pré-opérationnel de ZAC.</p>
@@ -158,28 +167,36 @@
 			</article>	
 
 			<article class="mesArticles" >
-				<div>
+				<div class="date">
 					<ul>
-						<li>2006 :<br/> Communauté Urbaine de Bordeaux (33) </li>
+						<li>2006</li>
+						<li2>Bordeaux-Métropole</li2>
 					</ul>	
 				</div>
-				<div>
+				<div class="formOrExp">
 					<h2>Chef du Département Territorial Est à la Direction du développement Opérationnel et de l’Aménagement </h2>
 					<p> - Maîtrise foncière préalable, et bilan financier prévisionnel d'une ZAC en régie (40 M°€)</p>
 				</div>
 			</article>
 		</section>
 	
-		<section id="Recommandations">
-			<h2><i class="fas fa-briefcase"></i>Recommandations</h2> 
-		
-			<article class="mesArticles">
-				<div>
-					<ul>
-						<li>Imrane ABDOUL<br/> https://imraneabdoul.com/ </li>
-					</ul>
-				</div>
-			</article>	
+		<section>
+			<h5 class="mesTitles"><i class="fa fa-pencil iconeMain"></i> RECOMMANDATIONS</h5>
+			<div id="Recommandations">
+				<article class="mesArticles">
+					<div>
+						<p>Imrane ABDOUL</p> 
+						<p><a href="https://imraneabdoul.com/">Lien vers le site d'Imrane ABDOUL</a></p>
+					</div>
+				</article>
+
+				<article class="mesArticles">
+					<div>
+						<p>Amibois</p>
+						<p><a href="https://www.ami-bois.fr/"> Lien vers le site d'Amibois</a></p>
+					</div>
+				</article>
+			</div>
 		</section>
 
 

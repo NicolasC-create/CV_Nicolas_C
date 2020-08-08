@@ -1,49 +1,68 @@
 body{
-    position: relative;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    width: 1000px;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  width: 1000px;
+    }
+
+p {
+  color: #595445; 
+  font-size: 18px; 
+  font-family: Arial, Verdana, sans-serif; 
+  padding-left: 12px; 
+  padding-right: 12px; 
+  text-align: justify;
 }
 
-p
-{
-    color: blue;
+h1 {
+  color: #FFC107; 
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 6px;
+} 
+
+h2 {
+  font-size: 20px;
+  color: #595445;
+  padding-left: 12px;
+  }
+
+h3 {
+  font-size: 25px;
+  color: #f7c018;
+  text-align: center;
+  background-color: #595445
 }
 
-.dates
-{
-    color: red;
+h4 {
+  color: #f7c018; 
+  font-size: 22px;
+  padding-left: 8px;
+  color: #595445;
+  padding-bottom: 95px;
 }
 
-p
-{
-    font-size: 18px; /* Paragraphes de 14 pixels */
-}
-h1
-{
-    font-size: 50px; /* Titres de 40 pixels */
+h5 {
+  font-size: 24px;
+  color: black;
+  padding-left: 12px;
+  }
+
+span {
+  color: black;
 }
 
-h2
-{
-    font-size: 20px; /* Titres de 40 pixels */
-    font-style: italic;
+ul {
+  color: #f7c018; 
+  font-size: 18px;
+  padding-left: 12px;
+  color: #595445;
 }
 
-h3
-{
-    font-size: 25px; /* Titres de 40 pixels */
-}
-
-p
-{
-    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
-}
 
 @font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
     font-family: 'cac_champagneregular';
@@ -55,95 +74,214 @@ p
 }
 
 h1 /* Utilisation de la police qu'on vient de définir sur les titres */
-{
-    font-family: 'cac_champagneregular', Arial, serif;
-}
+    { font-family: 'cac_champagneregular', Arial, serif;}
 
+figure {color: #595445;}
 
-h1
-{
-    font-weight: bold;
-}
-
-h3 {
-  border: 2px solid black;
-  box-shadow: 6px 6px 6px blue;
-}
-
-/* Définition des polices personnalisées */
-
-@font-face
-{
-    font-family: 'BallparkWeiner';
-    src: url('polices/ballpark.eot');
-    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-         url('polices/ballpark.woff') format('woff'),
-         url('polices/ballpark.ttf') format('truetype'),
-         url('polices/ballpark.svg#BallparkWeiner') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face
-{
-    font-family: 'Dayrom';
-    src: url('polices/dayrom.eot');
-    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
-         url('polices/dayrom.woff') format('woff'),
-         url('polices/dayrom.ttf') format('truetype'),
-         url('polices/dayrom.svg#Dayrom') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-#informations{
-    width: 30%;
-        background-color: orange;
+#informations{width: 31%;background-color: #FFC107;
 }
 #bloc_page{
-    width: 70%;
-    background-color: white;
+  width: 69%;
+  background-color: white;
+  margin-left: 3%;
 }
 
-.mesArticles{
+.mesArticles{display: flex; flex-direction: row;}
+
+.date{
+  width :30%;
+}
+
+.formOrExp{
+    width: 70%;
+}
+
+#Recommandations{
     display: flex;
     flex-direction: row;
-  
+    justify-content: space-around;
 }
+
+
+#mesIcones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#mesIcones span{
+    height: 45px;
+    width: 45px;
+    border: 1px solid;
+    padding: 4%;
+    border-radius: 100%;
+    display: flex;
+}
+
+#mesIcones span i{
+    margin: auto;
+    font-size: 28px;
+}
+
+.mesTitles{
+    border-bottom: 3px solid #FFC107;
+    padding-bottom: 13px;
+}
+
+.iconeMain{
+    color: #FFC107;
+    margin-right: 24px;
+}
+
+li{
+    list-style: none;
+}
+li::before {content: "• "; color:  #f7c018}
+
+li2{
+      padding-left: 12px
+}
+
+#about{
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    border-radius: 50%;
+}
+
+header {
+    margin-left: 10px;
+}
+
+/*media queries*/
 
 
 @media screen and (max-width: 1000px) {
-  body{
-      width: 800px;
-  }
-
-  #informations {
-    width: 40%;
-  }
-
-  #bloc_page {
-    width: 60%;
+  body{width: 800px;}
+  #informations {width: 36%;}
+  #bloc_page {width: 64%;
   } 
+  .date{
+        width: 35%;
+    }
+    
+  .formOrExp{
+        width: 65%;
+    }
+  h2{
+     font-size: 16px;
+  }
+  ul{
+      font-size: 16px;
+    }
+  p{
+      font-size: 14px;
+    }
+}
 
+
+
+@media screen and (max-width: 800px) {
+   body{
+       width: 100%;
+       flex-direction: column;
+    }
+   #informations {
+       width: 100%;
+       text-align: center;
+    }
+   #bloc_page {
+      width: 100%;
+      margin-left: 0%; 
+    }
+    p {
+        text-align: center;
+        font-size: 16px
+    }
+    ul{
+      font-style: italic;
+    }
+    h1{
+      padding-top: 50px
+    }
+    .mesArticles {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .date{
+        width: 100%;
+    }
+    
+    .formOrExp{
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+    }  
+    #Recommandations {
+        flex-direction: column;
+    }
+    #mesIcones span{
+      height: 25px;
+      width: 25px;
+      border: 1px solid;
+      padding: 4%;
+      border-radius: 100%;
+      display: flex;
+    }
+    #mesIcones span i{
+      margin: auto;
+      font-size: 22px;
 
 }
 
-@media screen and (max-width: 800px) {
-  body{
-      width: 100%;
-      flex-direction: column;
-  }
 
+@media screen and (max-width: 500px) {
+
+body{
+       width: 100%;
+       flex-direction: column;
+    }
    #informations {
-    width: 100%;
-    text-align: center;
-  }
+       width: 100%;
+       text-align: center;
+    }
+   #bloc_page {
+       width: 100%;
+       margin-left: 0%;
+    } 
+    h1 {
+        font-size: 28px
+    }
+    h3 {
+        font-size: 18px
+    }
+    p {
+        text-align: center;
+        font-size: 12px; 
+    }
+    .mesArticles {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .date{
+        width: 100%;
+    }
 
-  #bloc_page {
-    width: 100%;
-  } 
-
-
-
+    .formOrExp{
+        width: 100%;
+    }
+    header {
+        text-align: center;
+    }
+    #Recommandations {
+        flex-direction: column;
+    }
+    
 }
 
